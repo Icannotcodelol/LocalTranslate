@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Doctor-Patient Translator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section id="doctor" class="panel">
+        <h2>Doctor</h2>
+        <div class="controls">
+          <label>
+            Speak language
+            <select id="doctor-lang">
+              <option value="en" selected>English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="zh">Chinese</option>
+            </select>
+          </label>
+          <label>
+            Translate to
+            <select id="patient-lang">
+              <option value="es" selected>Spanish</option>
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="zh">Chinese</option>
+            </select>
+          </label>
+          <button id="doctor-record">🎙️ Speak</button>
+        </div>
+        <div class="text-output">
+          <h4>Transcription</h4>
+          <div class="transcription"></div>
+          <h4>Translation</h4>
+          <div class="translation"></div>
+        </div>
+      </section>
+
+      <section id="patient" class="panel">
+        <h2>Patient</h2>
+        <div class="controls">
+          <label>
+            Speak language
+            <select id="patient-speak-lang">
+              <option value="es" selected>Spanish</option>
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="zh">Chinese</option>
+            </select>
+          </label>
+          <label>
+            Translate to
+            <select id="doctor-target-lang">
+              <option value="en" selected>English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="zh">Chinese</option>
+            </select>
+          </label>
+          <button id="patient-record">🎙️ Speak</button>
+        </div>
+        <div class="text-output">
+          <h4>Transcription</h4>
+          <div class="transcription"></div>
+          <h4>Translation</h4>
+          <div class="translation"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html> 
