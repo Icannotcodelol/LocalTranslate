@@ -7,4 +7,5 @@ sentencepiece==0.1.99
 huggingface_hub==0.23.0
 python-multipart==0.0.9
 soundfile==0.13.1
-cffi==1.17.1 
+cffi==1.17.1
+ray[default]==2.24.0 
